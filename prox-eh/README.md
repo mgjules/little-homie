@@ -2,7 +2,13 @@
 
 Currently hosted on a 1vCPU 512mb RAM Ubuntu 22.10 x64 droplet on DigitalOcean.
 
-Do not forget to setup ufw:
+Setup Tailscale:
+```shell
+$ curl -fsSL https://tailscale.com/install.sh | sh
+$ sudo tailscale --auth-key "<auth key>" --hostname "prox-eh" --ssh
+```
+
+Setup UFW:
 ```shell
 $ sudo apt install ufw
 $ sudo ufw default deny incoming
