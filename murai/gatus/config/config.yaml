@@ -24,10 +24,6 @@ endpoints:
     <<: *defaults
     url: "https://directus.mgjules.dev/"
 
-  - name: portainer
-    <<: *defaults
-    url: "https://portainer.mgjules.dev/"
-
   - name: myspace
     <<: *defaults
     group: core

@@ -40,14 +40,6 @@ http:
       tls:
         certResolver: certresolver
 
-    portainer:
-      entryPoints:
-        - websecure
-      rule: Host(`portainer.mgjules.dev`)
-      service: portainer
-      tls:
-        certResolver: certresolver
-
   middlewares:
     auth:
       basicAuth:
@@ -69,8 +61,3 @@ http:
       loadBalancer:
         servers:
           - url: http://murai.beluga-eel.ts.net:8003/
-
-    portainer:
-      loadBalancer:
-        servers:
-          - url: http://murai.beluga-eel.ts.net:9000/
