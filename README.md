@@ -1,6 +1,6 @@
 # Little Homie
 
-Contains the deployment configuration for very minimal homelab.
+Contains the deployment configuration for my extremely minimal homelab.
 
 **WARNING**: Please note that this is very specific to my needs and may not work for you :)
 
