@@ -4,13 +4,13 @@ api:
 providers:
   file:
     watch: true
-    filename: /traefik_dynamic.yml
+    filename: /etc/traefik/traefik_dynamic.yml
   docker:
     watch: true
     exposedByDefault: false
 
 accessLog:
-  filePath: "/var/traefik/access.log"
+  filePath: "/etc/traefik/access.log"
 
 entryPoints:
   web:
