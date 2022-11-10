@@ -6,5 +6,5 @@ Setup Tailscale:
 
 ```shell
 curl -fsSL https://tailscale.com/install.sh | sh
-sudo tailscale --auth-key "<auth key>" --hostname "murai" --ssh
+sudo tailscale up --auth-key "<auth key>" --hostname "murai" --ssh
 ```

@@ -6,7 +6,7 @@ Setup Tailscale:
 
 ```shell
 curl -fsSL https://tailscale.com/install.sh | sh
-sudo tailscale --auth-key "<auth key>" --hostname "prox-eh" --ssh
+sudo tailscale up --auth-key "<auth key>" --hostname "prox-eh" --ssh
 ```
 
 Setup UFW:
@@ -15,6 +15,7 @@ Setup UFW:
 sudo apt install ufw
 sudo ufw default deny incoming
 sudo ufw default allow outgoing
+sudo ufw allow in on tailscale0
 sudo ufw allow http
 sudo ufw allow https
 sudo ufw enable
