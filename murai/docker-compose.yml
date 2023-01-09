@@ -2,7 +2,7 @@ version: "3.3"
 
 services:
   gatus:
-    image: twinproduction/gatus:latest
+    image: twinproduction/gatus:v5.1.1
     restart: unless-stopped
     volumes:
       - ./gatus/config:/config
@@ -32,7 +32,7 @@ services:
       - "./directus/database:/directus/database"
 
   watchtower:
-    image: containrrr/watchtower
+    image: containrrr/watchtower:1.5.1
     restart: unless-stopped
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
